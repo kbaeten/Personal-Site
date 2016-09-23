@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="mySite">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet">
+    <script src="main.js"></script>
+    <script src="https://use.fontawesome.com/e4cb50e6df.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <span id="name">KC Baeten</span>
+    <div id="icons">
+      <a href="mailto:k.c.baete@gmail.com"><img src="images/gmail.png" alt="gmail"></a>
+      <a href="https://www.linkedin.com/in/kc-baeten-ab830038"><img src="images/linkedin.png" alt="linkedin"></a>
+      <a href="https://github.com/kbaeten"><img src="images/github.png" alt="github"></a>
+    </div>
+  </header>
+  <!-- <hr> -->
+  <navbar>
+    <a href="?#/"><span>About</span></a>
+    <a href="?#/portfolio"><span>Portfolio</span></a>
+    <a href="?#/experience"><span>Experience</span></a>
+  </navbar>
+  <!-- <hr> -->
+  <main class="main-content" ng-view>
+
+  </main>
+  <footer>
+    <span id="copyright">&#169;</span><p id="inc">KCB Inc</p>
+  </footer>
+</body>
+</html>
