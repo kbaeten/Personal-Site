@@ -92,3 +92,43 @@ footer {
   text-align: center;
   margin-bottom: 2px;
 }
+
+/*Porfolio page styling*/
+
+#portfolioContainer {
+  display: flex;
+  width: 95vw;
+  margin: auto;
+}
+.projectDiv {
+  display: flex;
+  flex-direction: column;
+  width: 47vw;
+  border: 1px solid black;
+  margin-top: 5px;
+  margin-bottom: 5px
+}
+.projectDiv h3 {
+  text-align: center;
+  margin-bottom: 0;
+}
+.projectDiv span {
+  margin-top: 2px;
+  align-self: center;
+}
+.projectDiv img {
+  width: 46vw;
+  margin: auto;
+}
+#orderZip {
+  margin-right: .5vw;
+}
+#orderZipDemo {
+  margin-right: .5vw;
+}
+#hitchBike {
+  margin-left: .5vw;
+}
+#pottySpotter {
+  margin-left: .5vw;
+}
