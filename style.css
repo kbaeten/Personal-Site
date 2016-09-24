@@ -64,6 +64,13 @@ footer {
   margin-right: 3px;
   margin-top: 6px;
 }
+/*About page styling*/
+#aboutContainer {
+  width: 95vw;
+  margin: auto;
+}
+
+
 /*Experience page styling*/
 
 #experienceContainer {
@@ -104,7 +111,7 @@ footer {
   display: flex;
   flex-direction: column;
   width: 47vw;
-  border: 1px solid black;
+  /*border: 1px solid black;*/
   margin-top: 5px;
   margin-bottom: 5px
 }
@@ -114,21 +121,33 @@ footer {
 }
 .projectDiv span {
   margin-top: 2px;
-  align-self: center;
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.projectDiv p {
+  text-align: center;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 .projectDiv img {
-  width: 46vw;
+  display: flex;
+  width: 45vw;
   margin: auto;
+  margin-bottom: 5px;
+}
+.projectDiv img:hover{
+  border: 2px solid red;
 }
 #orderZip {
-  margin-right: .5vw;
+  margin-right: .35vw;
 }
 #orderZipDemo {
-  margin-right: .5vw;
+  margin-right: .35vw;
 }
 #hitchBike {
-  margin-left: .5vw;
+  margin-left: .35vw;
 }
 #pottySpotter {
-  margin-left: .5vw;
+  margin-left: .35vw;
 }
