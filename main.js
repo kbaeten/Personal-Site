@@ -5,13 +5,13 @@ app.config(['$routeProvider', function($routeProvider) {
     .when('/', {
       templateUrl: 'partials/about.html'
     })
-    .when('/portfolio', {
-      templateUrl: 'partials/portfolio.html'
-    })
-    .when('/experience', {
-      templateUrl: 'partials/experience.html',
-      // controller: 'storiesController'
-    })
+    // .when('/portfolio', {
+    //   templateUrl: 'partials/portfolio.html'
+    // })
+    // .when('/experience', {
+    //   templateUrl: 'partials/experience.html',
+    //   // controller: 'storiesController'
+    // })
     .otherwise({
       redirectTo: '/'
     });

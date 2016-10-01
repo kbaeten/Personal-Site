@@ -16,16 +16,17 @@ header {
   /*display: flex;
   justify-content: center;*/
 }
-header img {
-  height: 32px;
-  width: 32px;
-  margin-left: 2.5px;
-  margin-right: 2.5px;
-
+header i {
+  color: black;
+  font-size: 20px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
-header img:hover {
-  height: 38px;
-  width: 38px;
+.fa-envelope {
+  margin-right: 10px;
+}
+#icons i:hover {
+  color: red;
 }
 navbar {
   display: flex;
@@ -45,7 +46,7 @@ navbar a {
   color: black;
 }
 navbar a:hover {
-  text-decoration: underline;
+  color: red;
 }
 footer {
   display:flex;
@@ -64,10 +65,65 @@ footer {
   margin-right: 3px;
   margin-top: 6px;
 }
+h1 {
+  text-align: center;
+}
+
 /*About page styling*/
 #aboutContainer {
   width: 95vw;
   margin: auto;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+}
+#aboutContainer p {
+  font-size: 18px;
+}
+#aboutContainer h3 {
+  text-align: center;
+  font-size: 24px;
+}
+#aboutContainer h4 {
+  margin-bottom: 5px;
+  margin-left: 1vw;
+}
+#aboutContainer h5 {
+  margin-top: 2px;
+  margin-bottom: 10px;
+  margin-left: 1vw;
+}
+#bio {
+  width: 45vw;
+  border: 1px solid black;
+}
+#skills {
+  width: 50vw;
+  /*border: 1px solid black;*/
+}
+#skillsDiv {
+  display: flex;
+  border: 1px solid black;
+}
+#skills ul {
+  margin: auto;
+}
+#skills li {
+  margin-bottom: 5px;
+}
+#education {
+  display: flex;
+  justify-content: space-around;
+  width: 50vw;
+  border: 1px solid black;
+}
+#education img {
+  display: flex;
+  margin: auto;
+  width: 15vw;
+  margin-top: 1.5em;
+  margin-bottom: 5px;
+  border-radius: 10%;
 }
 
 
@@ -84,8 +140,6 @@ footer {
 }
 #leftJob {
   margin-left: 0;
-  background-size: 30vw 90%;
-  background-position: center;
 }
 #rightJob {
   margin-left: 0;
@@ -106,6 +160,7 @@ footer {
   display: flex;
   width: 95vw;
   margin: auto;
+  border-bottom: 3px solid black;
 }
 .projectDiv {
   display: flex;
