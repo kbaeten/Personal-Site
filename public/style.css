@@ -80,7 +80,7 @@ h1 {
   font-size: 16px;
 }
 #aboutContainer h3 {
-  text-align: center;
+  /*text-align: center;*/
   font-size: 24px;
 }
 #aboutContainer h4 {
@@ -94,8 +94,34 @@ h1 {
 }
 #bio {
   width: 45vw;
-  border: 1px solid black;
   padding: 10px;
+}
+#bio {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+#bio:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.3;
+    background-image: url('/images/Log.jpg');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+.centerTitle {
+  text-align: center;
 }
 #skills {
   width: 50vw;
@@ -103,7 +129,7 @@ h1 {
 }
 #skillsDiv {
   display: flex;
-  border: 1px solid black;
+  margin-bottom: 20px;
 }
 #skills ul {
   margin: auto;
@@ -115,7 +141,10 @@ h1 {
   display: flex;
   justify-content: space-around;
   width: 50vw;
-  border: 1px solid black;
+}
+#educationTitle {
+  margin-left: 22.5%;
+  font-weight: bold;
 }
 #education img {
   display: flex;
@@ -125,8 +154,65 @@ h1 {
   margin-bottom: 5px;
   border-radius: 10%;
 }
-
-
+#galvanizeSchool {
+  margin: auto;
+  text-align: center;
+  height: auto
+}
+#wisconsinSchool {
+  text-align: center;
+  margin: auto;
+  margin-right: 20px;
+  height: auto;
+}
+#galvanizeSchool {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+#galvanizeSchool:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-image: url('/images/galvanizeG.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: 10vw;
+}
+#wisconsinSchool {
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+#wisconsinSchool:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0.2;
+    background-image: url('/images/wisconsin.png');
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: 10vw;
+}
 /*Experience page styling*/
 
 #experienceContainer {
