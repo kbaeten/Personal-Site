@@ -350,7 +350,7 @@ h1 {
   margin-bottom: 5px;
 }
 .projectDiv img:hover{
-  border: 2px solid #007DC3;
+  opacity: 0.5;
 }
 #orderZip {
   margin-right: .35vw;
