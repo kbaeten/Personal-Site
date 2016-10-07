@@ -6,6 +6,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-route.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Sintony" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
     <script src="main.js"></script>
     <script src="https://use.fontawesome.com/e4cb50e6df.js"></script>
     <link rel="stylesheet" href="style.css">
@@ -21,9 +22,9 @@
   </header>
   <!-- <hr> -->
   <navbar>
-    <a href="?#/"><span>About</span></a>
-    <a href="?#/portfolio"><span>Portfolio</span></a>
-    <a href="?#/experience"><span>Experience</span></a>
+    <a href="?#/" id="aboutButton"><span>About</span></a>
+    <a href="?#/portfolio" id="portfolioButton"><span>Portfolio</span></a>
+    <a href="?#/experience" id="experienceButton"><span>Experience</span></a>
   </navbar>
   <!-- <hr> -->
   <main class="main-content" ng-view>

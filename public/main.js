@@ -5,14 +5,30 @@ app.config(['$routeProvider', function($routeProvider) {
     .when('/', {
       templateUrl: 'partials/about.html'
     })
-    // .when('/portfolio', {
-    //   templateUrl: 'partials/portfolio.html'
-    // })
-    // .when('/experience', {
-    //   templateUrl: 'partials/experience.html',
-    //   // controller: 'storiesController'
-    // })
     .otherwise({
       redirectTo: '/'
     });
 }]);
+
+$( document ).ready(function() {
+
+  console.log("Hello");
+  $("#aboutButton").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#aboutContainer").offset().top},
+        'slow');
+  });
+
+  $("#portfolioButton").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#portfolioTitle").offset().top},
+        'slow');
+  });
+
+  $("#experienceButton").click(function() {
+    $('html,body').animate({
+        scrollTop: $("#experienceTitle").offset().top},
+        'slow');
+  });
+
+});
